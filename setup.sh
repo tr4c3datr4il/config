@@ -1,5 +1,5 @@
 #!/bin/bash
-# My setup linux script
+# My linux setup script
 
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install curl git zsh -y
@@ -19,9 +19,6 @@ sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aa
 sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutils-arm-linux-gnueabihf-dbg && \
 sudo apt-get -y install qemu-kvm qemu
 
-mkdir ~/Scripts && cd ~/Scripts && wget https://raw.githubusercontent.com/1259iknowthat/Setup-Linux/main/ubuntu.sh
+mkdir ~/Scripts && cd ~/Scripts && wget https://raw.githubusercontent.com/1259iknowthat/ForVM/main/ubuntu.sh
 chmod +x ubuntu.sh
 ./ubuntu.sh
-
-
-
