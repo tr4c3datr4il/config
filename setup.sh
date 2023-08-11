@@ -10,10 +10,8 @@ git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_C
 git clone --depth 1 https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 
-cd ~/ && wget https://raw.githubusercontent.com/1259iknowthat/config/main/configs/.zshrc
-wget https://raw.githubusercontent.com/1259iknowthat/config/main/configs/.p10k.zsh
-
-exec zsh
+cd ~/ && wget https://raw.githubusercontent.com/1259iknowthat/config/main/configs/.zshrc -O ~/.zshrc
+wget https://raw.githubusercontent.com/1259iknowthat/config/main/configs/.p10k.zsh -O ~/.p10k.zsh
 
 sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
 sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutils-arm-linux-gnueabihf-dbg && \
@@ -21,4 +19,5 @@ sudo apt-get -y install qemu-kvm qemu
 
 mkdir ~/Scripts && cd ~/Scripts && wget https://raw.githubusercontent.com/1259iknowthat/ForVM/main/install.sh
 chmod +x install.sh
-./install.sh
+
+exec zsh
