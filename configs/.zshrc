@@ -48,7 +48,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -111,8 +111,7 @@ alias shutnow='sudo shutdown now'
 export PATH=/home/$USER/.local/bin:$PATH
 alias 'wordlists'='echo ~/lab/KaliLists ~/lab/SecLists'
 export LANG=/usr/lib/locale/en_US
-alias 'locallab'='cd /mnt/hgfs/Local-Lab/Workspace/'
-alias ls='ls --color=auto'
+alias 'locallab'='cd /mnt/hgfs/SharedFolder'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 alias ll='ls -alF'
@@ -124,3 +123,5 @@ alias egrep='egrep --color=auto'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export LC_TIME=en_US.utf-8
+export LANG=en_US.utf-8
